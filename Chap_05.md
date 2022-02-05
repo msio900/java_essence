@@ -55,7 +55,7 @@ name[2] = "Yi";
 
 ```java
 String[] name = new String[]{"Kim", "Park", "Yi"};
-String!] name = { "Kim", "Park", "Yi"}; // new String[]을 생략할수 있음
+String[] name = {"Kim", "Park", "Yi"}; // new String[]을 생략할수 있음
 ```
 
 ![](./image/5_2_2-1.png)
@@ -108,9 +108,9 @@ class ArrayEx12 {
 }
 
 // 실행 결과
-names[0]:Kim
+names[0]: Kim
 names[1]: Park
-names[2]:Yi
+names[2]: Yi
 tmp:Yi
 Yu
 Park
@@ -122,12 +122,12 @@ Yi
 ```java
 class ArrayEx13 {
 	public static void main(String[] args) {
-		char[] hex = { 'C', 'A', 'F', 'E'};
+		char[] hex = {'C', 'A', 'F', 'E'};
 
-		String[] binary = {   "0000", "0001", "0010", "0011"
-						    , "0100", "0101", "0110", "0111"
-						    , "1000", "1001", "1010", "1011"
-						    , "1100", "1101", "1110", "1111" };
+		String[] binary = {"0000", "0001", "0010", "0011"
+            			   , "0100", "0101", "0110", "0111"
+						   , "1000", "1001", "1010", "1011"
+						   , "1100", "1101", "1110", "1111"};
 
 		String result="";
 
@@ -163,8 +163,8 @@ result + = binary[hex[i]-’A’+10];
 * i의 값이 0일 때, hex[0]의 값은 'C'이므로, 위의 문장은 다음과 같은 과정으로 계산됨.
 
 ```java
-→ result + = binary [hex[0] —'A'+10];// hex[0]은 'C'
-→ result + = binary['C'-'A'+10];// 'C' → ’A’ → 67 - 65 → 2
+→ result + = binary [hex[0] —'A'+10];	// hex[0]은 'C'
+→ result + = binary['C'-'A'+10];		// 'C' → ’A’ → 67 - 65 → 2
 → result + = binary [2 + 10];
 → result + = binary[12];
 → result + = "1100";
@@ -190,7 +190,7 @@ String클래스는 char배열에 기능(메서드)을 추가한 것이다.
 
 ```java
 String str = "Java";
-str = str + ”8”; 			// "Java8"이라는 새로운 문자열이 str에 저장된다.
+str = str + "8"; 			// "Java8"이라는 새로운 문자열이 str에 저장된다.
 System.out.printin(str); 	// "Java8"
 ```
 
@@ -252,7 +252,7 @@ if(str.equals("abc")) { // str와 "abc"가내용이 같은지 확인한다.
 ```java
 char[] chArr = { 'A', 'B', 'C' };
 String str = new String (chArr); // char배열 → String
-char[] tmp = str.toCharArray(); // String — char배열
+char[] tmp = str.toCharArray(); // String - char배열
 ```
 
 ```java
